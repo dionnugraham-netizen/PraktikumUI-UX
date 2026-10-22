@@ -1,0 +1,111 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 20px;
+    line-height: 1.4;
+}
+
+#header {
+    background-color: #e0e0e0;
+    border: 1px solid #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-top: 0;
+}
+
+blockquote {
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #cccccc;
+    padding-left: 10px;
+    font-style: italic;
+    color: #444444;
+    margin: 5px 0;
+}
+
+#soekarno {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul {
+    background-color: #f0f0f0;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    list-style-type: square;
+    border-radius: 5px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+ul li a {
+    border: 1px solid #5f686e;
+    padding: 5px 10px;
+    color: #000003;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.gambar img, .koleksi img {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid rgb(33, 45, 45);
+    border-radius: 30px
+}
+
+.isi {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+#profil, #beternak {
+    background-color: #fafafa;
+    border: 1px dashed #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #990000;
+    border-bottom: 1px solid #990000;
+    padding-bottom: 3px;
+}
+
+.promo {
+    background-color: #ffffe0; 
+    border: 2px solid #ff9900;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.promo del {
+    color: #cc0000;
+}
+
+.promo strong {
+    color: #009900;
+}
+
+#Wa {
+    color: #0000ff;
+    background-color: #e6e6fa;
+    padding: 2px 5px;
+}
+.cod {
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}

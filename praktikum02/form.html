@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+<body>
+    <h1>Black goese bistro | Pizza-on-Demand</h1>
+    <p>
+        our 12$quet; wood fired pizzas ae available for delivery.
+    </p>
+
+    <form action="berhasil.html" method="post">
+        <fieldset>
+            <legend>Your Information</legend>
+
+            <table border="0" cellspacing="8" cellpadding="0">
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><input type="text" id="address" name="address" required></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="intruction">delivery Intructions:</label></td>
+            <td><textarea id="intructions" name="intructions" rows="4" cols="50" maxlength="400" placeholder="no more than 400 characters."></textarea></td>
+        </tr>
+            </table>
+
+        </fieldset>
+        <fieldset style="padding: 15px; border-radius: 8px;">
+    <legend><strong>Design your dream pizza</strong></legend>
+
+    <p><strong>Pizza Specs</strong></p>
+    <p>Pilih 1 (Crust):</p>
+
+    <!-- Pilihan Crust (Radio) -->
+    <table border="0" cellspacing="6" cellpadding="0">
+        <tr>
+            <td><input type="radio" id="classic" name="crust" value="classic white" required></td>
+            <td><label for="classic">Classic White</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="multigrain" name="crust" value="multigrain" required></td>
+            <td><label for="multigrain">Multigrain</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="cheese" name="crust" value="cheese" required></td>
+            <td><label for="cheese">Cheese Stuffed</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="gluten" name="crust" value="gluten free" required></td>
+            <td><label for="gluten">Gluten Free</label></td>
+        </tr>
+    </table>
+
+    <br>
+    <p><strong>Toppings:</strong></p>
+
+    <!-- Pilihan Toppings (Checkbox) -->
+    <table border="0" cellspacing="6" cellpadding="0">
+        <tr>
+            <td><input type="checkbox" id="redsauce" name="topping" value="Red sauce"></td>
+            <td><label for="redsauce">Red Sauce</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="mozarella" name="topping" value="Mozzarella Cheese"></td>
+            <td><label for="mozarella">Mozzarella Cheese</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="pepperoni" name="topping" value="Pepperoni"></td>
+            <td><label for="pepperoni">Pepperoni</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="mushroom" name="topping" value="Mushrooms"></td>
+            <td><label for="mushroom">Mushrooms</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="onions" name="topping" value="Onions"></td>
+            <td><label for="onions">Onions</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="sausage" name="topping" value="Sausage"></td>
+            <td><label for="sausage">Sausage</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="blackolives" name="topping" value="Black Olives"></td>
+            <td><label for="blackolives">Black Olives</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="greenpeppers" name="topping" value="Green Peppers"></td>
+            <td><label for="greenpeppers">Green Peppers</label></td>
+        </tr>
+    </table>
+</fieldset>
+    </form>
+    <input type="submit" value="Submit Order">
+    <input type="reset" value="Reset Form">
+    
+</body>
+</html>
