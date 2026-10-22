@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile - Dion Nugraha Muharamsyah</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section (Foto & Biodata) */
+        header {
+            display: flex;
+            gap: 25px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #00bcd4;
+        }
+
+        .profile-info {
+            flex: 2;
+        }
+
+        .profile-info h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .categories {
+            flex: 1;
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #00bcd4;
+        }
+
+        .categories h3 {
+            margin-bottom: 10px;
+            color: #00838f;
+        }
+
+        .categories ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        /* CSS Biodata Rapi & Sejajar */
+        .profile-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-info td {
+            padding: 4px 0;
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .profile-info td.label {
+            font-weight: bold;
+            width: 120px;
+            color: #2c3e50;
+        }
+
+        .profile-info td.separator {
+            width: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .profile-info td.value {
+            color: #444;
+        }
+
+        /* Main Content & Article */
+        article {
+            margin-bottom: 25px;
+        }
+
+        article h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-left: 4px solid #ffb300;
+            padding-left: 10px;
+        }
+
+        article p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* Grid Multimedia & Attachments */
+        .multimedia-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        .media-box {
+            background: #fafafa;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .media-box h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        /* Video Styling */
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Photo Gallery Styling */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        /* Attachments / Download Section */
+        .attachments ul {
+            list-style: none;
+        }
+
+        .attachments li {
+            margin-bottom: 10px;
+        }
+
+        .attachments a {
+            display: inline-block;
+            text-decoration: none;
+            color: #0277bd;
+            font-weight: 500;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .attachments a:hover {
+            color: #01579b;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+<!-- Header: Foto Diri, Biodata Rapi, dan Kategori Skill -->
+        <header>
+            <!-- Foto Diri -->
+            <img src="img/dion.jpg" alt="Foto Dion Nugraha" class="profile-img">
+
+            <!-- Biodata Lengkap (Tabel Rapi Sejajar) -->
+            <div class="profile-info">
+                <h1>Dion Nugraha Muharamsyah</h1>
+                <table>
+                    <tr>
+                        <td class="label">NIM</td>
+                        <td class="separator">:</td>
+                        <td class="value">0110226042</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Program Studi</td>
+                        <td class="separator">:</td>
+                        <td class="value">Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Kampus</td>
+                        <td class="separator">:</td>
+                        <td class="value">STT Terpadu Nurul Fikri</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email</td>
+                        <td class="separator">:</td>
+                        <td class="value">dionnugraham@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Telepon</td>
+                        <td class="separator">:</td>
+                        <td class="value">0812-3456-7890</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Alamat</td>
+                        <td class="separator">:</td>
+                        <td class="value">Depok, Jawa Barat, Indonesia</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Categories / Minat Specialization -->
+            <div class="categories">
+                <h3>Minat & Keahlian</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Linux System Administration</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Main Content: Deskripsi Diri (2 Paragraf Bersahabat) -->
+        <article>
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo! Gua Dion, mahasiswa Teknik Informatika di STT Terpadu Nurul Fikri yang lagi suka bergulat didunia web development, desain UI/UX, sama teknologi AI. Gua tipe orang yang penasaran banget sama hal-hal baru di dunia teknologi—mulai dari ngoprek kodingan frontend yang interaktif, ngerancang tampilan web yang estetik dan ramah pengguna, sampai nyobain berbagai tools berbasis Linux dan AI buat ngebantu produktivitas harian.
+            </p>
+            <p>
+                Selain sibuk sama urusan koding dan kuliah, gua juga hobi eksplorasi ide-ide kreatif dan berkolaborasi dalam tim. Buat gua, ngoding itu bukan cuma sekadar nulis baris kode biar programnya jalan, tapi tentang gimana kita bisa nyiptain karya digital yang bener-bener berguna dan nyaman dipake sama orang banyak. Salam kenal dan selamat datang di web profil gua!
+            </p>
+        </article>
+        <!-- Section Multimedia (Video, Foto, & Download Link) -->
+
+        <div class="multimedia-section">
+            <!-- Box 1: Video Player -->
+            <div class="media-box">
+                <h3>Video Perkenalan</h3>
+                <video controls poster="https://via.placeholder.com/300x150?text=Cover+Video">
+                    <source src="img/video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Box 2: Koleksi Foto / Galeri -->
+            <div class="media-box">
+                <h3>Koleksi Foto Kegiatan</h3>
+                <div class="photo-gallery">
+                    <img src="img/foto1.jpeg" alt="Foto 1">
+                    <img src="img/foto2.jpeg" alt="Foto 2">
+                    <img src="img/foto3.jpeg" alt="Foto 3">
+                    <img src="img/foto4.jpeg" alt="Foto 4">
+                </div>
+            </div>
+
+            <!-- Box 3: Attachments / Link Download File -->
+            <div class="media-box attachments">
+                <h3>Download Berkas / File</h3>
+                <ul>
+                    <li>📄 <a href="CV_Dion_Nugraha.pdf" download>Download Curriculum Vitae (PDF)</a></li>
+                    <li>📑 <a href="Laporan_Praktikum3.pdf" download>Download Laporan Praktikum 3</a></li>
+                    <li>📁 <a href="Sertifikat_PBL.pdf" download>Download Sertifikat Proyek</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Dion Nugraha Muharamsyah - STT Terpadu Nurul Fikri</p>
+        </footer>
+    </div>
+
+</body>
+</html>
