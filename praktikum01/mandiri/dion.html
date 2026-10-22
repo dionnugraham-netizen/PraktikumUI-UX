@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Lengkap Dion</title>
+    <!-- Google Fonts untuk font mirip gambar -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fdf5ec; /* Warna krem latar belakang */
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Utama */
+        .resume-card {
+            background-color: #fdf5ec;
+            max-width: 950px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 40px;
+            padding: 10px;
+        }
+
+        /* === KOLOM KIRI === */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .photo-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Teks Tangan 'hello!' */
+        .hello-badge {
+            position: absolute;
+            top: 20px;
+            left: -35px;
+            font-family: 'Caveat', cursive;
+            font-size: 50px;
+            color: #0b3c8f;
+            transform: rotate(-15deg);
+            z-index: 2;
+        }
+
+        /* Frame Foto Lengkung */
+        .profile-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 24px;
+            background-color: #e3e8ed;
+        }
+
+        /* Info Kontak */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 14px;
+            color: #0b3c8f;
+            font-weight: 600;
+        }
+
+        .contact-info span {
+            color: #555;
+            font-weight: 400;
+        }
+
+        /* Bagian Technical Skills */
+        .section-title-left {
+            color: #0b3c8f;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .skills-grid {
+            display: flex;
+            gap: 12px;
+        }
+
+        .skill-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #7da5df, #3b6fb6);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* === KOLOM KANAN === */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            position: relative;
+        }
+
+        /* Elemen Bintang Biru */
+        .star-shape {
+            position: absolute;
+            left: -55px;
+            top: 230px;
+            width: 35px;
+            height: 35px;
+            background-color: #0b3c8f;
+            clip-path: polygon(50% 0%, 63% 38%, 100% 50%, 63% 63%, 50% 100%, 38% 63%, 0% 50%, 38% 38%);
+        }
+
+        /* Judul Seksi Kolom Kanan */
+        .section-header {
+            color: #0b3c8f;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 12px;
+        }
+
+        /* Garis Biru Kecil di Samping Judul Seksi */
+        .section-header::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            bottom: 2px;
+            width: 3px;
+            background-color: #0b3c8f;
+        }
+
+        /* Paragraf About Me */
+        .about-text {
+            font-size: 13.5px;
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+        }
+
+        /* Layout Timeline (Education & Experience) */
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        .timeline-date {
+            color: #0b3c8f;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .timeline-content h4 {
+            color: #0b3c8f;
+            font-size: 14.5px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .timeline-content .subtitle {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .timeline-content .description {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .timeline-content .company-tag {
+            font-size: 11.5px;
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-card">
+        
+        <!-- KOLOM KIRI -->
+        <div class="left-column">
+            <!-- Foto & Badge Teks -->
+            <div class="photo-wrapper">
+                <div class="hello-badge"><a href="index.html" target="_blank">hello!</a></div>
+                <!-- Ganti foto.jpg dengan file foto kamu -->
+                <img src="img/dion.jpg" alt="Truc Dang" class="profile-img">
+            </div>
+
+            <!-- Kontak -->
+            <div class="contact-info">
+                <div>Birthday: <span>10 Januari 2008</span></div>
+                <div>Phone/Zalo: <span>+6285836029536</span></div>
+                <div>Email: <span>dionnugraham@gmail.com</span></div>
+            </div>
+
+            <!-- Skills -->
+            <div>
+                <div class="section-title-left">TECHNICAL SKILLS</div>
+                <div class="skills-grid">
+                    <div class="skill-icon">ML</div>
+                    <div class="skill-icon">AI</div>
+                    <div class="skill-icon">OL</div>
+                    <div class="skill-icon">CS</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KOLOM KANAN -->
+        <div class="right-column">
+            <!-- Dekorasi Bintang Biru -->
+            <div class="star-shape"></div>
+
+            <!-- Seksi About Me -->
+            <div>
+                <div class="section-header">ABOUT ME</div>
+                <p class="about-text">
+                    Hi, I'm Truc Dang – a mid-level graphic designer who values clarity, emotion, and purpose in every design. I enjoy building visual identities, packaging, and social content that help brands express who they truly are. I'm curious, detail-oriented, and always open to learning new things to grow both creatively and professionally.
+                </p>
+            </div>
+
+            <!-- Seksi Education -->
+            <div>
+                <div class="section-header">EDUCATION</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2026</div>
+                    <div class="timeline-content">
+                        <h4>Pondok Pesantren Thursina YBM PLN</h4>
+                        <div class="subtitle">Tahfizh Al-Qur'an</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seksi Experience -->
+            <div>
+                <div class="section-header">EXPERIENCE</div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Present</div>
+                    <div class="timeline-content">
+                        <h4>Freelancer Graphic Designer</h4>
+                        <p class="description">I am involved in projects with clients such as G Kitchen, LoF, S2, and Asiafoods,...</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2026</div>
+                    <div class="timeline-content">
+                        <h4>Leader Of Koperasi Thursina</h4>
+                        <p class="company-tag">Syabab Thursina Organization(STO)</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>Graphic Design Executive</h4>
+                        <p class="company-tag">GREENFEED FOOD</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2019</div>
+                    <div class="timeline-content">
+                        <h4>Graphic Design</h4>
+                        <p class="company-tag">FlameTech Digital</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
